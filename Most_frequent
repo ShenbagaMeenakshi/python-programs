@@ -1,0 +1,13 @@
+def most_frequent(word):
+    for key in word:
+        if key in dic:
+            dic[key]=+1
+        else:
+            dic[key]=1
+    for key,value in dic.items():
+        print(key,"=",value)
+dic={}
+string1=input("please enter a word:")
+most_frequent(string1)
+sorted_d=dict(sorted(dic.items(),key=lambda x:x[1],reverse=True))
+print(sorted_d)
